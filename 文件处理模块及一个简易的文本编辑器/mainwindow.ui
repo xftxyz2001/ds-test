@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>1</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionnew_file"/>
+    <addaction name="actionopen_file"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsaveas"/>
+    <addaction name="separator"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="actionundo"/>
+    <addaction name="actionredo"/>
+    <addaction name="separator"/>
+    <addaction name="actioncut"/>
+    <addaction name="actioncopy"/>
+    <addaction name="actionpaste"/>
+    <addaction name="separator"/>
+    <addaction name="actionselectall"/>
+    <addaction name="actionreadonly"/>
+   </widget>
+   <widget class="QMenu" name="menuformat">
+    <property name="title">
+     <string>格式</string>
+    </property>
+    <addaction name="actionsizeadd"/>
+    <addaction name="actionsizesub"/>
+   </widget>
+   <widget class="QMenu" name="menuhelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionabout"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuformat"/>
+   <addaction name="menuhelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionnew_file">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionopen_file">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionabout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionsaveas">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="actionreadonly">
+   <property name="text">
+    <string>只读</string>
+   </property>
+  </action>
+  <action name="actionselectall">
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="actionsizeadd">
+   <property name="text">
+    <string>增大字号</string>
+   </property>
+  </action>
+  <action name="actionsizesub">
+   <property name="text">
+    <string>减小字号</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
